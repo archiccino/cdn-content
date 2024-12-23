@@ -1,0 +1,106 @@
+// fonts.scss
+
+@font-face {
+	font-family: "Fantasque Sans Mono Nerd Font";
+	src: url("fonts/FantasqueSansMNerdFont-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Fantasque Sans Mono Nerd Font";
+	src: url("fonts/FantasqueSansMNerdFont-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Fantasque Sans Mono Nerd Font";
+	src: url("fonts/FantasqueSansMNerdFont-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Fantasque Sans Mono Nerd Font";
+	src: url("fonts/FantasqueSansMNerdFont-BoldItalic.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Fantasque Sans Mono Nerd Font";
+	src: url("fonts/FantasqueSansMNerdFontMono-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Fantasque Sans Mono Nerd Font";
+	src: url("fonts/FantasqueSansMNerdFontMono-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Fantasque Sans Mono Nerd Font";
+	src: url("fonts/FantasqueSansMNerdFontMono-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Fantasque Sans Mono Nerd Font";
+	src: url("fonts/FantasqueSansMNerdFontMono-BoldItalic.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Fantasque Sans Mono Nerd Font";
+	src: url("fonts/FantasqueSansMNerdFontPropo-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Fantasque Sans Mono Nerd Font";
+	src: url("fonts/FantasqueSansMNerdFontPropo-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Fantasque Sans Mono Nerd Font";
+	src: url("fonts/FantasqueSansMNerdFontPropo-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Fantasque Sans Mono Nerd Font";
+	src: url("fonts/FantasqueSansMNerdFontPropo-BoldItalic.ttf")
+		format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+// fonts.scss
+
+// Regular Fonts
+$font-regular: "Fantasque Sans Mono Nerd Font", sans-serif;
+$font-bold: "Fantasque Sans Mono Nerd Font", sans-serif;
+$font-italic: "Fantasque Sans Mono Nerd Font", sans-serif;
+$font-bolditalic: "Fantasque Sans Mono Nerd Font", sans-serif;
+
+// Mono Fonts
+$font-mono-regular: "Fantasque Sans Mono Nerd Font", monospace;
+$font-mono-bold: "Fantasque Sans Mono Nerd Font", monospace;
+$font-mono-italic: "Fantasque Sans Mono Nerd Font", monospace;
+$font-mono-bolditalic: "Fantasque Sans Mono Nerd Font", monospace;
+
+// Proportional Fonts
+$font-propo-regular: "Fantasque Sans Mono Nerd Font", sans-serif;
+$font-propo-bold: "Fantasque Sans Mono Nerd Font", sans-serif;
+$font-propo-italic: "Fantasque Sans Mono Nerd Font", sans-serif;
+$font-propo-bolditalic: "Fantasque Sans Mono Nerd Font", sans-serif;

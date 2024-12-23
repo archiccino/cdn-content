@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Arch Setup",
+    "path": "archiso/arch-setup.sh",
+    "description": "This script sets up an Arch Linux installation by installing necessary packages (like neovim, zsh, networkmanager, and ntfs-3g), configures system locales, timezone, and hostname, and sets up the user and bootloader.\n\nIt also includes steps to set up a new user with a password, grant sudo access to the 'wheel' group, and configure the bootloader (GRUB or direct boot).",
+    "version": "1.0.0",
+    "dependencies": [
+      "pacman",
+      "grub",
+      "efibootmgr",
+      "os-prober",
+      "bootctl"
+    ],
+    "tags": [
+      "system setup",
+      "Arch Linux",
+      "user creation",
+      "GRUB",
+      "bootloader"
+    ],
+    "author": {
+      "name": "Suryansh Kapil",
+      "email": "suryansh@archiccinolinux.xyz"
+    }
+  }
+]

@@ -1,0 +1,111 @@
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: theme(text); // White text color for headings
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+// Paragraphs
+p {
+	font-size: 1rem;
+	line-height: 1.8;
+	margin-bottom: 1.5rem;
+}
+
+// Links
+a {
+	color: theme(link); // Accent color for links
+	text-decoration: none;
+	transition: color 0.3s ease;
+
+	&:hover {
+		color: theme(link-hover); // Hover effect for links
+	}
+}
+
+// Lists
+ul,
+ol {
+	margin: 1rem 0;
+	padding-left: 1.5rem;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+// Blockquotes
+blockquote {
+	border-left: 4px solid theme(accent); // Accent color for blockquote border
+	padding-left: 1rem;
+	margin: 1rem 0;
+	font-style: italic;
+	color: theme(text); // White text for blockquote
+}
+
+// Figures
+figure {
+	margin: 1rem 0;
+}
+
+figcaption {
+	font-size: 0.875rem;
+	color: theme(accent); // Use accent color for caption text
+	text-align: center;
+}
+
+@for $i from 1 through 6 {
+	// Heading styles
+	.heading-#{$i} {
+		font-size: 2.5rem - 0.25rem * $i;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+
+	// Paragraph styles
+	.paragraph-#{$i} {
+		font-size: 1rem - 0.1rem * $i;
+		line-height: 1.8;
+		margin-bottom: 1.5rem;
+	}
+
+	.seperator-#{$i} {
+		margin: $i * 0.5rem 0;
+
+		&.border {
+			border-bottom: 2px solid theme(accent);
+		}
+	}
+}

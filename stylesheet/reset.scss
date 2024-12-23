@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+body {
+	min-height: 100vh;
+	color-scheme: dark light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+	text-wrap: pretty;
+	max-width: 65ch;
+}
+
+body > :is(header, footer),
+section,
+main,
+article {
+	container-type: inline-size;
+}
+
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
+	background-repeat: no-repeat;
+	background-size: cover;
+	shape-margin: 0.75rem;
+}
+
+input,
+textarea,
+select,
+button {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}

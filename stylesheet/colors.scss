@@ -1,0 +1,20 @@
+// colors.scss
+
+// Define color palette for the theme
+$theme-colors: (
+	background: #1a1a1a,
+	// Matte black background
+	text: #ffffff,
+	// White text
+	accent: #9b89b3,
+	// Accent color (Lavender)
+	link: #9b89b3,
+	// Link color
+	link-hover: #e1c6e1,
+	// Lighter shade for link hover
+);
+
+// Function to get colors from the theme palette
+@function theme($color-name) {
+	@return map-get($theme-colors, $color-name);
+}
