@@ -22,5 +22,30 @@
       "name": "Suryansh Kapil",
       "email": "suryansh@archiccinolinux.xyz"
     }
+  },
+{
+  "name": "Btrfs Partition & Mount Setup",
+  "path": "archiso/partition.sh",
+  "description": "This script scans for an existing EFI partition (EF00) and creates one if necessary. It then prompts the user to select a partition for Btrfs setup, ensures the partition is formatted as Btrfs (with a confirmation prompt if it isn’t), and creates a structured set of subvolumes (@, @home, @desktop, @user_config, @snapshots). Finally, it mounts these subvolumes and sets up user directories.",
+  "version": "1.0.0",
+  "dependencies": [
+    "parted",
+    "lsblk",
+    "btrfs-progs",
+    "mount",
+    "umount"
+  ],
+  "tags": [
+    "Btrfs",
+    "partitioning",
+    "Arch Linux",
+    "subvolumes",
+    "EFI",
+    "mounting"
+  ],
+  "author": {
+    "name": "Suryansh Kapil",
+    "email": "suryansh@archiccinolinux.xyz"
   }
+}
 ]
