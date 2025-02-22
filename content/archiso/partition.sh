@@ -13,6 +13,7 @@ check_efi_partition() {
 ### Function to prompt user for partition if EFI is missing ###
 get_partition_for_efi() {
     echo "No EFI partition found!"
+    lsbllk -o NAME,PARTTYPE,MOUNTPOINT
     read -rp "Enter the partition to shrink by 1GiB for EFI (e.g., nvme0n1p3, sda2): " partition
     if [[ -z "$partition" ]]; then
         echo "No partition provided. Exiting..."
