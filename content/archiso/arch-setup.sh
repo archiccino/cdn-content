@@ -1,7 +1,6 @@
 #!/bin/bash
 
-pacman -Sy
-pacman -S neovim zsh networkmanager ntfs-3g --noconfirm
+pacman -Sy neovim zsh networkmanager git github-cli glab ntfs-3g --noconfirm
 pacman -S amd-ucode --noconfirm
 
 echo "en_IN UTF-8" > /etc/locale.gen
@@ -15,6 +14,7 @@ systemctl enable fstrim.timer
 
 echo "[multilib]" >> /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
+pacman -Sy
 
 # Set the root password in a loop until successful
 while true; do
@@ -148,3 +148,10 @@ esac
 
 echo "KEYMAP=us" > /etc/vconsole.conf
 echo "arch" > /etc/hostname
+
+pacman -S plasma cosmic firefox dolphin
+
+
+cd /home/$username
+git clone https://aur.archlinux.org/yay.git
+cd yay
